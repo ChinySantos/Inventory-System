@@ -32,6 +32,7 @@ const connection = mysql.createConnection({
 //CONNECT TO SERVER (HTTP ADDRESS)
 var server = app.listen(3000,function(){
     console.log("WEB SERVICE STARTING...");
+    console.log("localhost:3000");
 });   
 
 //ROUTE CONTROLLER
