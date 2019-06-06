@@ -59,10 +59,6 @@ app.post('/inventory/add',function(req,res){
     ];
 
     connection.query(sql, [values], function (err, result) {
-      if (err) throw err;
-        console.log("Number of records inserted: " + result.affectedRows);
-        console.log(result + "RESULT");
-        console.log(err);
       res.redirect(baseUrl);
     });
 
